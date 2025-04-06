@@ -423,9 +423,9 @@ void ChatService::reset()
 
 void ChatService::Init_Chatbot()
 {
-    my_chatbot.setURL("https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions");
-    my_chatbot.setAPIKEY("sk-2b7fada44ee84a02812eabf1c64641ab");
-    my_chatbot.setModel("qwen-turbo");
+    my_chatbot.setURL("你要访问的大语言模型的URL");
+    my_chatbot.setAPIKEY("你的API_KEY");
+    my_chatbot.setModel("你的大语言模型名字");
     my_chatbot.setMaxTokens(150);
 }
 
