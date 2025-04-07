@@ -7,6 +7,13 @@ ChatServer_LLM_Docker是基于c++的高性能网络聊天室，支持多人同�
 基于muduo网络库实现高并发通信、基于curl实现HTTP访问LLM-API、使用nlohmann::json进行服务端-客户端消息之间的序列化及反序列化
 为了方便使用者使用，该项目配置了Docker，支持一键构建项目
 
+#要使用llm_API,可先在项目test处测试使用者的api_key、model_url、model_name是否正确
+cd test
+g++ test_llm.cpp -o test_llm -lcurl
+./test_llm
+若有model_name:回复... 
+则chatbot可正常使用
+
 #自用时需更改以下代码
 main/src/server/chatservice :427行
 void ChatService::Init_Chatbot()
