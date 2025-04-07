@@ -15,9 +15,9 @@ static size_t writeCallback(void* contents,size_t size,size_t nmemb,string* outp
 
 int main()
 {
-    string api_key="sk-2b7fada44ee84a02812eabf1c64641ab";
-    string url="https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions";
-    string model="qwen-turbo";
+    string api_key="your api_key";//必须改
+    string url="your model api";//必须改
+    string model="your model";//必须改
 
     json request_json={
         {"model",model},
